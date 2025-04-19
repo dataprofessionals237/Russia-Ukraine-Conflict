@@ -81,7 +81,7 @@ if response.status_code == 200:
             territory_status TEXT,
             percentage_occupied FLOAT,
             area_occupied FLOAT,
-            total_casualties INT
+            Total_Soldier_Casualties INT
         );       
     """)
 
@@ -90,7 +90,7 @@ if response.status_code == 200:
         INSERT INTO {schema_name}.{table_name} (
             "start", "end", "date", country, event, oblast, casualties, injured,
             captured, civilian_casualties, new_recruits, combat_intensity, territory_status,
-            percentage_occupied, area_occupied, total_casualties
+            percentage_occupied, area_occupied, Total_Soldier_Casualties
         ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
     """
 
@@ -111,7 +111,7 @@ if response.status_code == 200:
             row.get("Territory_Status"),
             row.get("Percentage_Occupied", 0),
             row.get("Area_Occupied", 0),
-            row.get("Total_Casualties", 0),
+            row.get("Total_Soldier_Casualties", 0),
         ))
 
     conn.commit()
