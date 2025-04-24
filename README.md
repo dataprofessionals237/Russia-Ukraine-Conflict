@@ -3,7 +3,7 @@
 This project demonstrates a complete **ETL (Extract, Transform, Load)** pipeline built using **KoboToolbox**, **Python**, **PostgreSQL**, and **Power BI** (optional). It extracts real-time data about the Russia-Ukraine conflict, cleans and transforms it using Python, and loads it into a PostgreSQL database for further analysis.
 
 🎥 **Watch the Full Tutorial on YouTube:**  
-📺 [Click here to follow the step-by-step guide](http://www.youtube.com/@abhasabessolo1)
+📺 [Click here to follow the step-by-step guide] (<video controls src="20250424-1842-40.2010778.mp4" title="Title"></video>)
 
 ---
 
